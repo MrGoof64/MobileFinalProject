@@ -1,2 +1,0 @@
-Use any backend framework to build the backend here.
-Make sure the backend project is only in this folder.
