@@ -45,7 +45,7 @@
     "author": "Pierce Brown",
     "publisher": "Del Rey Books",
     "date": "July 15, 2014",
-    "genre": "SCI-FI",
+    "genre": "SCI_FI",
     "pages": 416,
     "description": "Darrow is a Red, a member of the lowest caste in the color-coded society of the future. Like his fellow Reds, he works all day, believing that he and his people are making the surface of Mars livable for future generations. Yet he toils willingly, trusting that his blood and sweat will one day result in a better world for his children."
   },
@@ -55,7 +55,7 @@
     "author": "Delia Owens",
     "publisher": "G.P. Putnam's Sons",
     "date": "August 14, 2018",
-    "genre": "Mystery",
+    "genre": "MYSTERY",
     "pages": 384,
     "description": "For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say. Sensitive and intelligent, she has survived for years alone in the marsh that she calls home, finding friends in the gulls and lessons in the sand. Then the time comes when she yearns to be touched and loved. When two young men from town become intrigued by her wild beauty, Kya opens herself to a new life—until the unthinkable happens."
   },
@@ -65,7 +65,7 @@
     "author": "Suzanne Collins",
     "publisher": "Scholastic Press",
     "date": "September 14, 2008",
-    "genre": "YOUNG ADULT",
+    "genre": "YOUNG_ADULT",
     "pages": 384,
     "description": "Winning means fame and fortune. Losing means certain death. The Hunger Games have begun. . . .\n\nIn the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.\n\nSixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before-and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weigh survival against humanity and life against love."
   },
@@ -85,8 +85,8 @@
     "author": "George Orwell",
     "publisher": "Signet",
     "date": "August 17, 1945",
-    "genre": "",
-    "pages": 1168,
-    "description": "ALLEGORICAL"
+    "genre": "ALLEGORICAL",
+    "pages": 140,
+    "description": "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set for one of the most telling satiric fables ever penned—a razor-edged fairy tale for grown-ups that records the evolution from revolution against tyranny to a totalitarianism just as terrible."
   }
 ]

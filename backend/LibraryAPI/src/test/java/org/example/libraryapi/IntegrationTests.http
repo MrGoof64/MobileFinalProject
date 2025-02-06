@@ -1,0 +1,6 @@
+### Get All Books
+GET http://localhost:8080/book/start
+
+### Get Book With Id
+@id = 67a40dcc5a6a458bbe86bc3c
+GET http://localhost:8080/book/{{id}}
