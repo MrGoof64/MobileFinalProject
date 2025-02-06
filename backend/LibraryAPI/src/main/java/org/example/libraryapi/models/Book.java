@@ -25,7 +25,7 @@ public class Book {
     @Field("publisher")
     private String publisher;
 
-    @Field("release_date")
+    @Field("date")
     private String releaseDate;
 
     @Field("genre")

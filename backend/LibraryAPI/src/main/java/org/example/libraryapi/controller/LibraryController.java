@@ -2,14 +2,12 @@ package org.example.libraryapi.controller;
 
 import org.example.libraryapi.models.Book;
 import org.example.libraryapi.repository.LibraryRepository;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//@CrossOrigin(origins = "*")   if needed
+@CrossOrigin(origins = "*")
+@RequestMapping("/book")
 @RestController
 public class LibraryController {
     private final LibraryRepository libraryRepository;
@@ -18,7 +16,7 @@ public class LibraryController {
         this.libraryRepository = libraryRepository;
     }
 
-    @GetMapping("/")
+    @GetMapping("/start")
     public List<Book> getAllBooks() {
         return libraryRepository.findAll();
     }
