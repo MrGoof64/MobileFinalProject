@@ -25,4 +25,9 @@ public class LibraryController {
     public Book getBookById(@PathVariable String id) {
         return libraryRepository.findById(id).orElse(null);
     }
+
+    @GetMapping("/name/{name}")
+    public List<Book> getBooksByName(@PathVariable String name) {
+        return libraryRepository.findByName(name);
+    }
 }
