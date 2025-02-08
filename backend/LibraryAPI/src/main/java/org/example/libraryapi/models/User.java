@@ -15,12 +15,12 @@ public class User {
     @Id
     private String id;
 
-    @Field
+    @Field("userName")
     private String userName;
 
-    @Field
+    @Field("password")
     private String password;
 
-    @Field
+    @Field("checkedOutBooks")
     private List<String> checkedOutBooks;
 }
