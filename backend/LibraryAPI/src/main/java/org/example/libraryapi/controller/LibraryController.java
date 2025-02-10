@@ -46,7 +46,7 @@ public class LibraryController {
         return userRepository.findById(id).orElse(null);
     }
 
-    @PostMapping("/users/{userId}/checkout/{bookId}")
+    @PostMapping("/users/{userId}/userCheckout/{bookId}")
     public User checkoutBook(@PathVariable String userId, @PathVariable String bookId) {
         return userRepository.findById(userId).map(user -> {
             if (!user.getCheckedOutBooks().contains(bookId)) {
@@ -57,7 +57,7 @@ public class LibraryController {
         }).orElse(null);
     }
 
-    @PutMapping("/users/{userId}/return/{bookId}")
+    @PutMapping("/users/{userId}/userReturn/{bookId}")
     public ResponseEntity<?> returnBook(@PathVariable String userId, @PathVariable String bookId) {
         Optional<User> optionalUser = userRepository.findById(userId);
 

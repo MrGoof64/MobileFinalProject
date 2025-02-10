@@ -17,9 +17,9 @@ GET http://localhost:8080/book/users/{{getUserId}}
 ### Add Book to Users Account
 @bookId = 67a659f7c5adfdbe491ff3d3
 @userId = 67a7b7e0a1c7cb9b146e6bec
-POST http://localhost:8080/book/users/{{userId}}/checkout/{{bookId}}
+POST http://localhost:8080/book/users/{{userId}}/userCheckout/{{bookId}}
 
 ### Remove Book From Users Account
 @removeBookId = 67a659f7c5adfdbe491ff3d3
 @removeUserId = 67a7b7e0a1c7cb9b146e6bec
-PUT http://localhost:8080/book/users/{{removeUserId}}/return/{{removeBookId}}
+PUT http://localhost:8080/book/users/{{removeUserId}}/userReturn/{{removeBookId}}
