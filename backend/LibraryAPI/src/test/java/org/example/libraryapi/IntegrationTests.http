@@ -10,6 +10,10 @@ GET http://localhost:8080/book/{{getBookId}}
 ### Get All Users
 GET http://localhost:8080/book/users
 
+### Get User By Name
+@userName = Aiden
+GET http://localhost:8080/book/user/{{userName}}
+
 ### Get User With Id
 @getUserId = 67a7b7e0a1c7cb9b146e6bec
 GET http://localhost:8080/book/users/{{getUserId}}
@@ -23,3 +27,4 @@ POST http://localhost:8080/book/users/{{userId}}/userCheckout/{{bookId}}
 @removeBookId = 67a659f7c5adfdbe491ff3d3
 @removeUserId = 67a7b7e0a1c7cb9b146e6bec
 PUT http://localhost:8080/book/users/{{removeUserId}}/userReturn/{{removeBookId}}
+

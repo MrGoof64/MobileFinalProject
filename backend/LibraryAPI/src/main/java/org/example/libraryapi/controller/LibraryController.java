@@ -76,4 +76,9 @@ public class LibraryController {
 
         return ResponseEntity.ok(user);
     }
+
+    @GetMapping("/user/{userName}")
+    public List<User> getUserByName(@PathVariable String userName) {
+        return userRepository.findByUserName(userName);
+    }
 }
