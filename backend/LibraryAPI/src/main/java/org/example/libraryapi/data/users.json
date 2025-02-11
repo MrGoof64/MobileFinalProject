@@ -1,0 +1,17 @@
+[
+  {
+    "userName": "Aiden",
+    "password": "aiden",
+    "checkedOutBooks": []
+  },
+  {
+    "userName": "Brayan",
+    "password": "brayan",
+    "checkedOutBooks": []
+  },
+  {
+    "userName": "Kele",
+    "password": "kele",
+    "checkedOutBooks": []
+  }
+]

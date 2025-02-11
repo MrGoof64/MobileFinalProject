@@ -36,4 +36,10 @@ public class Book {
 
     @Field("description")
     private String description;
+
+    @Field("available")
+    private int available;
+
+    @Field("checkedOut")
+    private int checkedOut;
 }
