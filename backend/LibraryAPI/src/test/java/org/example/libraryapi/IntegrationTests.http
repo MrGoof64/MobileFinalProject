@@ -8,3 +8,7 @@ GET http://localhost:8080/book/{{id}}
 ### Get Books by Name/Title
 @name = Red Rising
 GET http://localhost:8080/book/name/{{name}}
+
+### Get Books by Name/Title
+@genre = HORROR
+GET http://localhost:8080/book/genre/{{genre}}
