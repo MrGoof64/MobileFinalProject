@@ -5,4 +5,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 
-public interface LibraryRepository extends MongoRepository<Book, String> { }
+public interface LibraryRepository extends MongoRepository<Book, String> {
+    List<Book> findByName(String name);
+    List<Book> findByGenre(String genre);
+}

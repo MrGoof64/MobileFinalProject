@@ -3,6 +3,16 @@
 GET http://localhost:8080/book/start
 
 ### Get Book With Id
+@id = 67a50d866589b2298cc594d8
+GET http://localhost:8080/book/{{id}}
+
+### Get Books by Name/Title
+@name = Red Rising
+GET http://localhost:8080/book/name/{{name}}
+
+### Get Books by Name/Title
+@genre = HORROR
+GET http://localhost:8080/book/genre/{{genre}}
 @getBookId = 67a659f7c5adfdbe491ff3d3
 GET http://localhost:8080/book/{{getBookId}}
 

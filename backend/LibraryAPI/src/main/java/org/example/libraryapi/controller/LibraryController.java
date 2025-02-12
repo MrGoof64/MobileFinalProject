@@ -1,6 +1,7 @@
 package org.example.libraryapi.controller;
 
 import org.example.libraryapi.models.Book;
+import org.example.libraryapi.models.Genre;
 import org.example.libraryapi.models.User;
 import org.example.libraryapi.repository.LibraryRepository;
 import org.example.libraryapi.repository.UserRepository;
@@ -34,6 +35,15 @@ public class LibraryController {
         return libraryRepository.findById(id).orElse(null);
     }
 
+    @GetMapping("/name/{name}")
+    public List<Book> getBooksByName(@PathVariable String name) {
+        return libraryRepository.findByName(name);
+    }
+
+    @GetMapping("/genre/{genre}")
+    public List<Book> getBooksByGenre(@PathVariable String genre) {
+        return libraryRepository.findByGenre(genre);
+    }
 
     // User Functions
     @GetMapping("/users")
