@@ -1,3 +1,4 @@
+# Book Tests
 ### Get All Books
 GET http://localhost:8080/book/start
 
@@ -12,3 +13,28 @@ GET http://localhost:8080/book/name/{{name}}
 ### Get Books by Name/Title
 @genre = HORROR
 GET http://localhost:8080/book/genre/{{genre}}
+@getBookId = 67a659f7c5adfdbe491ff3d3
+GET http://localhost:8080/book/{{getBookId}}
+
+# User Tests
+### Get All Users
+GET http://localhost:8080/book/users
+
+### Get User By Name
+@userName = Aiden
+GET http://localhost:8080/book/user/{{userName}}
+
+### Get User With Id
+@getUserId = 67a7b7e0a1c7cb9b146e6bec
+GET http://localhost:8080/book/users/{{getUserId}}
+
+### Add Book to Users Account
+@bookId = 67a659f7c5adfdbe491ff3d3
+@userId = 67a7b7e0a1c7cb9b146e6bec
+POST http://localhost:8080/book/users/{{userId}}/userCheckout/{{bookId}}
+
+### Remove Book From Users Account
+@removeBookId = 67a659f7c5adfdbe491ff3d3
+@removeUserId = 67a7b7e0a1c7cb9b146e6bec
+PUT http://localhost:8080/book/users/{{removeUserId}}/userReturn/{{removeBookId}}
+

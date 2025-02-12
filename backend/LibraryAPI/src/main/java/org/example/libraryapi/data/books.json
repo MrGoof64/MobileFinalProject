@@ -7,7 +7,9 @@
     "date": "October 21, 1954",
     "genre": "FANTASY",
     "pages": 432,
-    "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose."
+    "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/61gq65lOUQL._SY466_.jpg",
@@ -17,7 +19,9 @@
     "date": "January 1, 2012",
     "genre": "ROMANCE",
     "pages": 318,
-    "description": "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten."
+    "description": "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/71l4l6o2drL._SY466_.jpg",
@@ -27,7 +31,9 @@
     "date": "September 10, 2024",
     "genre": "HISTORY",
     "pages": 528,
-    "description": "Nexus looks through the long lens of human history to consider how the flow of information has shaped us, and our world. Taking us from the Stone Age, through the canonization of the Bible, early modern witch-hunts, Stalinism, Nazism, and the resurgence of populism today, Yuval Noah Harari asks us to consider the complex relationship between information and truth, bureaucracy and mythology, wisdom and power. He explores how different societies and political systems throughout history have wielded information to achieve their goals, for good and ill. And he addresses the urgent choices we face as non-human intelligence threatens our very existence."
+    "description": "Nexus looks through the long lens of human history to consider how the flow of information has shaped us, and our world. Taking us from the Stone Age, through the canonization of the Bible, early modern witch-hunts, Stalinism, Nazism, and the resurgence of populism today, Yuval Noah Harari asks us to consider the complex relationship between information and truth, bureaucracy and mythology, wisdom and power. He explores how different societies and political systems throughout history have wielded information to achieve their goals, for good and ill. And he addresses the urgent choices we face as non-human intelligence threatens our very existence.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/81d0FQ-l2dL._SY466_.jpg",
@@ -37,7 +43,9 @@
     "date": "May 16, 2023",
     "genre": "BIOGRAPHY",
     "pages": 688,
-    "description": "Vividly written and exhaustively researched, Jonathan Eig’s King: A Life is the first major biography in decades of the civil rights icon Martin Luther King Jr.―and the first to include recently declassified FBI files. In this revelatory new portrait of the preacher and activist who shook the world, the bestselling biographer gives us an intimate view of the courageous and often emotionally troubled human being who demanded peaceful protest for his movement but was rarely at peace with himself. He casts fresh light on the King family’s origins as well as MLK’s complex relationships with his wife, father, and fellow activists. King reveals a minister wrestling with his own human frailties and dark moods, a citizen hunted by his own government, and a man determined to fight for justice even if it proved to be a fight to the death. As he follows MLK from the classroom to the pulpit to the streets of Birmingham, Selma, and Memphis, Eig dramatically re-creates the journey of a man who recast American race relations and became our only modern-day founding father―as well as the nation’s most mourned martyr."
+    "description": "Vividly written and exhaustively researched, Jonathan Eig’s King: A Life is the first major biography in decades of the civil rights icon Martin Luther King Jr.―and the first to include recently declassified FBI files. In this revelatory new portrait of the preacher and activist who shook the world, the bestselling biographer gives us an intimate view of the courageous and often emotionally troubled human being who demanded peaceful protest for his movement but was rarely at peace with himself. He casts fresh light on the King family’s origins as well as MLK’s complex relationships with his wife, father, and fellow activists. King reveals a minister wrestling with his own human frailties and dark moods, a citizen hunted by his own government, and a man determined to fight for justice even if it proved to be a fight to the death. As he follows MLK from the classroom to the pulpit to the streets of Birmingham, Selma, and Memphis, Eig dramatically re-creates the journey of a man who recast American race relations and became our only modern-day founding father―as well as the nation’s most mourned martyr.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/51kD6K4Bx9L._SY445_SX342_.jpg",
@@ -47,7 +55,9 @@
     "date": "July 15, 2014",
     "genre": "SCI_FI",
     "pages": 416,
-    "description": "Darrow is a Red, a member of the lowest caste in the color-coded society of the future. Like his fellow Reds, he works all day, believing that he and his people are making the surface of Mars livable for future generations. Yet he toils willingly, trusting that his blood and sweat will one day result in a better world for his children."
+    "description": "Darrow is a Red, a member of the lowest caste in the color-coded society of the future. Like his fellow Reds, he works all day, believing that he and his people are making the surface of Mars livable for future generations. Yet he toils willingly, trusting that his blood and sweat will one day result in a better world for his children.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/81F0NTrPdCL._SY466_.jpg",
@@ -57,7 +67,9 @@
     "date": "August 14, 2018",
     "genre": "MYSTERY",
     "pages": 384,
-    "description": "For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say. Sensitive and intelligent, she has survived for years alone in the marsh that she calls home, finding friends in the gulls and lessons in the sand. Then the time comes when she yearns to be touched and loved. When two young men from town become intrigued by her wild beauty, Kya opens herself to a new life—until the unthinkable happens."
+    "description": "For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say. Sensitive and intelligent, she has survived for years alone in the marsh that she calls home, finding friends in the gulls and lessons in the sand. Then the time comes when she yearns to be touched and loved. When two young men from town become intrigued by her wild beauty, Kya opens herself to a new life—until the unthinkable happens.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/71un2hI4mcL._SY466_.jpg",
@@ -67,7 +79,9 @@
     "date": "September 14, 2008",
     "genre": "YOUNG_ADULT",
     "pages": 384,
-    "description": "Winning means fame and fortune. Losing means certain death. The Hunger Games have begun. . . .\n\nIn the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.\n\nSixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before-and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weigh survival against humanity and life against love."
+    "description": "Winning means fame and fortune. Losing means certain death. The Hunger Games have begun. . . .\n\nIn the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.\n\nSixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before-and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weigh survival against humanity and life against love.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/71ZIovNjw+L._SY466_.jpg",
@@ -77,7 +91,9 @@
     "date": "September 15, 1986",
     "genre": "HORROR",
     "pages": 1168,
-    "description": "They were seven teenagers when they first stumbled upon the horror. Now they are grown-up men and women who have gone out into the big world to gain success and happiness. But the promise they made twenty-eight years ago calls them reunite in the same place where, as teenagers, they battled an evil creature that preyed on the city’s children. Now, children are being murdered again and their repressed memories of that terrifying summer return as they prepare to once again battle the monster lurking in Derry’s sewers."
+    "description": "They were seven teenagers when they first stumbled upon the horror. Now they are grown-up men and women who have gone out into the big world to gain success and happiness. But the promise they made twenty-eight years ago calls them reunite in the same place where, as teenagers, they battled an evil creature that preyed on the city’s children. Now, children are being murdered again and their repressed memories of that terrifying summer return as they prepare to once again battle the monster lurking in Derry’s sewers.",
+    "available": 3,
+    "checkedOut": 0
   },
   {
     "picture": "https://m.media-amazon.com/images/I/71je3-DsQEL._SY466_.jpg",
@@ -87,6 +103,8 @@
     "date": "August 17, 1945",
     "genre": "ALLEGORICAL",
     "pages": 140,
-    "description": "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set for one of the most telling satiric fables ever penned—a razor-edged fairy tale for grown-ups that records the evolution from revolution against tyranny to a totalitarianism just as terrible."
+    "description": "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set for one of the most telling satiric fables ever penned—a razor-edged fairy tale for grown-ups that records the evolution from revolution against tyranny to a totalitarianism just as terrible.",
+    "available": 3,
+    "checkedOut": 0
   }
 ]
