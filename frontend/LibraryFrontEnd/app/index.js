@@ -1,10 +1,11 @@
 import {useEffect, useState} from 'react';
-import {FlatList, StyleSheet, Text, View, Image} from 'react-native';
+import {FlatList, StyleSheet, Text, View, Image, TextInput, Pressable} from 'react-native';
 import Constants from "expo-constants/src/Constants";
 import {Link} from "expo-router";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 export default function Page() {
-
+  const [search, setSearch] = useState('');
   const [bookData, setBookData] = useState([])
 
   useEffect(() => {
@@ -24,6 +25,19 @@ export default function Page() {
 
   return (
       <View style={styles.container}>
+
+        <View style={styles.searchBar}>
+          <TextInput
+              style={styles.input}
+              value={search}
+              onChangeText={setSearch}
+          />
+          <Pressable onPress={() => {}}>
+            <FontAwesome5 name="filter" size={24} color="black" />
+          </Pressable>
+        </View>
+
+
         <FlatList
             data={bookData}
             keyExtractor={(item) => item.id.toString()}
@@ -64,4 +78,16 @@ const styles = StyleSheet.create({
     height: 215,
     borderRadius: 8,
   },
+  searchBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 20,
+  },
+  input: {
+    padding: 8,
+    borderWidth: 1,
+    borderRadius: 5,
+    width: "90%",
+  }
 });
