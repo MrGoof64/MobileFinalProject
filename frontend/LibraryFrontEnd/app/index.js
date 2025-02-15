@@ -9,19 +9,22 @@ export default function Page() {
   const [bookData, setBookData] = useState([])
 
   useEffect(() => {
-    const hostUri = Constants.expoConfig.hostUri
-    const ipAddress = hostUri ? hostUri.split(":")[0] : null;
-    const apiPort = "8080"
+    const getBookData = setTimeout(() => {
+      const hostUri = Constants.expoConfig.hostUri
+      const ipAddress = hostUri ? hostUri.split(":")[0] : null;
+      const apiPort = "8080"
 
-    const apiUrl = ipAddress
-        ? `http://${ipAddress}:${apiPort}/book/start`
-        : null;
+      const url = search ? `http://${ipAddress}:${apiPort}/book/name/${search}` : `http://${ipAddress}:${apiPort}/book/start`;
+      const apiUrl = ipAddress ? url : null;
 
-    fetch (apiUrl)
-        .then(response => response.json())
-        .then(data => setBookData(data))
-        .catch(error => console.log(error));
-  }, []);
+      fetch (apiUrl)
+          .then(response => response.json())
+          .then(data => setBookData(data))
+          .catch(error => console.log(error));
+    }, 1000)
+
+    return () => search ? clearTimeout(getBookData) : getBookData;
+  }, [search]);
 
   return (
       <View style={styles.container}>
