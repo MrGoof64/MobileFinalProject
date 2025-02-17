@@ -3,10 +3,19 @@ import {Image, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react
 import Constants from "expo-constants/src/Constants";
 import {Link, useLocalSearchParams} from "expo-router";
 
-const Weapon = () => {
+// This page displays all of the book information and allows the user
+// to check out the book
+const Book = () => {
 
+    // These constants are left out of the useEffect so that they can
+    // also be used in the checkout method.
     const {id} = useLocalSearchParams()
+
     const [book, setBook] = useState(null)
+
+    // I set the name to Aiden by default just to show that it works.
+    // This username is passed to the checkout function so that the
+    // data can be added to the users.json file
     const [userName, setUserName] = useState("Aiden")
 
     const hostUri = Constants.expoConfig.hostUri
@@ -25,6 +34,10 @@ const Weapon = () => {
             .catch(error => console.log(error));
     }, []);
 
+    // This method calls the checkoutBook function in the API. I defaulted the
+    // userName here for testing purposes, and the id is taken from the book id
+    // found in the local search parameters. This method is called on pressing
+    // the checkout button
     const checkout = async () => {
         return await fetch(`http://${ipAddress}:${apiPort}/book/users/${userName}/userCheckout/${id}`, {
             method: "POST",
@@ -126,4 +139,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Weapon;
+export default Book;
