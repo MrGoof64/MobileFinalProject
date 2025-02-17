@@ -13,7 +13,7 @@ data that is stored in MongoDB
 <details>
   <summary>Front End</summary>
   <ul>
-    <li>React Nativet</li>
+    <li>React Native</li>
     <li>Expo</li>
   </ul>
 </details>
