@@ -1,14 +1,22 @@
 import {useEffect, useState} from 'react';
-import {FlatList, StyleSheet, Text, View, Image, Button, TouchableOpacity} from 'react-native';
+import {Image, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import Constants from "expo-constants/src/Constants";
 import {Link, useLocalSearchParams} from "expo-router";
-import { ScrollView } from 'react-native';
-import {StatusBar} from "expo-status-bar";
 
-const Weapon = () => {
+// This page displays all of the book information and allows the user
+// to check out the book
+const Book = () => {
 
+    // These constants are left out of the useEffect so that they can
+    // also be used in the checkout method.
     const {id} = useLocalSearchParams()
+
     const [book, setBook] = useState(null)
+
+    // I set the name to Aiden by default just to show that it works.
+    // This username is passed to the checkout function so that the
+    // data can be added to the users.json file
+    const [userName, setUserName] = useState("Aiden")
 
     const hostUri = Constants.expoConfig.hostUri
     const ipAddress = hostUri ? hostUri.split(":")[0] : null;
@@ -25,6 +33,17 @@ const Weapon = () => {
             .then(data => setBook(data))
             .catch(error => console.log(error));
     }, []);
+
+    // This method calls the checkoutBook function in the API. I defaulted the
+    // userName here for testing purposes, and the id is taken from the book id
+    // found in the local search parameters. This method is called on pressing
+    // the checkout button
+    const checkout = async () => {
+        return await fetch(`http://${ipAddress}:${apiPort}/book/users/${userName}/userCheckout/${id}`, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+        })
+    }
 
 
     return (
@@ -49,6 +68,9 @@ const Weapon = () => {
                         </View>
                     </>
                 )}
+                <TouchableOpacity style={styles.button} onPress={async () => await checkout()}>
+                    <Text>Checkout</Text>
+                </TouchableOpacity>
             </View>
         </ScrollView>
     );
@@ -109,6 +131,12 @@ const styles = StyleSheet.create({
     label: {
         fontWeight: "bold",
     },
+    button: {
+        backgroundColor: 'grey',
+        paddingVertical: 12,
+        paddingHorizontal: 24,
+        borderRadius: 30,
+    }
 });
 
-export default Weapon;
+export default Book;

@@ -1,7 +1,6 @@
 package org.example.libraryapi.controller;
 
 import org.example.libraryapi.models.Book;
-import org.example.libraryapi.models.Genre;
 import org.example.libraryapi.models.User;
 import org.example.libraryapi.repository.LibraryRepository;
 import org.example.libraryapi.repository.UserRepository;
@@ -46,30 +45,45 @@ public class LibraryController {
     }
 
     // User Functions
+
+    // Returns all the users from users.json
     @GetMapping("/users")
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
+    // Returns a specific user based on their id
     @GetMapping("/users/{id}")
     public User getUserById(@PathVariable String id) {
         return userRepository.findById(id).orElse(null);
     }
 
-    @PostMapping("/users/{userId}/userCheckout/{bookId}")
-    public User checkoutBook(@PathVariable String userId, @PathVariable String bookId) {
-        return userRepository.findById(userId).map(user -> {
-            if (!user.getCheckedOutBooks().contains(bookId)) {
-                user.getCheckedOutBooks().add(bookId);
+    // Returns a specific user based on their name. Better than grabbing the id
+    // because the name never changes
+    @GetMapping("/user/{userName}")
+    public Optional<User> getUserByName(@PathVariable String userName) {
+        return userRepository.findByUserName(userName);
+    }
+
+    // Takes a user based on their name, then adds a book based on its id to that
+    // users checkedOutBooks list. I used the book's id because that's what is passed
+    // between pages on the front end.
+    @PostMapping("/users/{userName}/userCheckout/{id}")
+    public User checkoutBook(@PathVariable String userName, @PathVariable String id) {
+        return userRepository.findByUserName(userName).map(user -> {
+            if (!user.getCheckedOutBooks().contains(id)) {
+                user.getCheckedOutBooks().add(id);
                 return userRepository.save(user);
             }
             return user;
         }).orElse(null);
     }
 
-    @PutMapping("/users/{userId}/userReturn/{bookId}")
-    public ResponseEntity<?> returnBook(@PathVariable String userId, @PathVariable String bookId) {
-        Optional<User> optionalUser = userRepository.findById(userId);
+    // Similar to the checkoutBook function, but instead removes the specified
+    // book from the user's checkedOutBooks list
+    @PutMapping("/users/{userName}/userReturn/{bookId}")
+    public ResponseEntity<?> returnBook(@PathVariable String userName, @PathVariable String bookId) {
+        Optional<User> optionalUser = userRepository.findByUserName(userName);
 
         if (optionalUser.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
@@ -85,10 +99,5 @@ public class LibraryController {
         userRepository.save(user);
 
         return ResponseEntity.ok(user);
-    }
-
-    @GetMapping("/user/{userName}")
-    public List<User> getUserByName(@PathVariable String userName) {
-        return userRepository.findByUserName(userName);
     }
 }
