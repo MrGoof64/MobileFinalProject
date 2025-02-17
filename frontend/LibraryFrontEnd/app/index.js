@@ -3,10 +3,13 @@ import {FlatList, StyleSheet, Text, View, Image} from 'react-native';
 import Constants from "expo-constants/src/Constants";
 import {Link} from "expo-router";
 
+// Home page of the app. Show every book in the library by default
 export default function Page() {
 
   const [bookData, setBookData] = useState([])
 
+  // On load this makes a call to the API and retrieves all of the book
+  // data in the book.json file
   useEffect(() => {
     const hostUri = Constants.expoConfig.hostUri
     const ipAddress = hostUri ? hostUri.split(":")[0] : null;
@@ -22,8 +25,10 @@ export default function Page() {
         .catch(error => console.log(error));
   }, []);
 
+  // This is what displays all the books
   return (
       <View style={styles.container}>
+        {/*The flatlist runs through each book in the json file and displays them*/}
         <FlatList
             data={bookData}
             keyExtractor={(item) => item.id.toString()}
@@ -31,6 +36,8 @@ export default function Page() {
             columnWrapperStyle={styles.row}
             renderItem={({ item }) => (
                 <View style={styles.bookContainer}>
+                {/*This is neccesary to pass the book id to the book page*/}
+                {/*    so that more information can be displayed*/}
                   <Link href={`/book/${item.id}`}>
                     <Image
                         style={styles.image}
@@ -46,6 +53,7 @@ export default function Page() {
   );
 }
 
+// Styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,
