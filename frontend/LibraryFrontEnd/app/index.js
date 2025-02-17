@@ -27,8 +27,8 @@ export default function Page() {
         <FlatList
             data={bookData}
             keyExtractor={(item) => item.id.toString()}
-            numColumns={2} // Two books per row
-            columnWrapperStyle={styles.row} // Styling for row spacing
+            numColumns={2}
+            columnWrapperStyle={styles.row}
             renderItem={({ item }) => (
                 <View style={styles.bookContainer}>
                   <Link href={`/book/${item.id}`}>
@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   row: {
-    justifyContent: "space-between", // Ensures spacing between columns
+    justifyContent: "space-between",
   },
   bookContainer: {
     flex: 1,
     alignItems: "center",
-    marginVertical: 10, // Space between rows
+    marginVertical: 10,
   },
   image: {
     width: 150,
