@@ -1,7 +1,6 @@
 package org.example.libraryapi.controller;
 
 import org.example.libraryapi.models.Book;
-import org.example.libraryapi.models.Genre;
 import org.example.libraryapi.models.User;
 import org.example.libraryapi.repository.LibraryRepository;
 import org.example.libraryapi.repository.UserRepository;
@@ -56,20 +55,20 @@ public class LibraryController {
         return userRepository.findById(id).orElse(null);
     }
 
-    @PostMapping("/users/{userId}/userCheckout/{bookId}")
-    public User checkoutBook(@PathVariable String userId, @PathVariable String bookId) {
-        return userRepository.findById(userId).map(user -> {
-            if (!user.getCheckedOutBooks().contains(bookId)) {
-                user.getCheckedOutBooks().add(bookId);
+    @PostMapping("/users/{userName}/userCheckout/{id}")
+    public User checkoutBook(@PathVariable String userName, @PathVariable String id) {
+        return userRepository.findByUserName(userName).map(user -> {
+            if (!user.getCheckedOutBooks().contains(id)) {
+                user.getCheckedOutBooks().add(id);
                 return userRepository.save(user);
             }
             return user;
         }).orElse(null);
     }
 
-    @PutMapping("/users/{userId}/userReturn/{bookId}")
-    public ResponseEntity<?> returnBook(@PathVariable String userId, @PathVariable String bookId) {
-        Optional<User> optionalUser = userRepository.findById(userId);
+    @PutMapping("/users/{userName}/userReturn/{bookId}")
+    public ResponseEntity<?> returnBook(@PathVariable String userName, @PathVariable String bookId) {
+        Optional<User> optionalUser = userRepository.findByUserName(userName);
 
         if (optionalUser.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
@@ -88,7 +87,7 @@ public class LibraryController {
     }
 
     @GetMapping("/user/{userName}")
-    public List<User> getUserByName(@PathVariable String userName) {
+    public Optional<User> getUserByName(@PathVariable String userName) {
         return userRepository.findByUserName(userName);
     }
 }
