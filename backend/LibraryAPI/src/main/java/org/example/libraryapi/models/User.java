@@ -8,6 +8,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.List;
 
+// This is just a POJO that takes the users.json file and puts
+// the data into variables
 @Getter
 @Setter
 @Document(collection = "users")

@@ -37,6 +37,9 @@ public class Book {
     @Field("description")
     private String description;
 
+    // I added this variable as a way to check how many books are available.
+    // In the json each book has 3 available, and should lose one when a book
+    // is checked out.
     @Field("available")
     private int available;
 
